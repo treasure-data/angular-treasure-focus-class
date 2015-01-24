@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>treasure-focus-class example</title>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 2em;
+      transition: background-color 0.5s ease;
+    }
+
+    .string, .binding-remove {
+      background-color: red;
+    }
+
+    .string-add, .binding {
+      background-color: green;
+    }
+
+    .string-remove, .binding-add {
+      background-color: purple;
+    }
+
+  </style>
+</head>
+<body ng-app='example'>
+  <h1>treasure-focus-class example</h1>
+  <div>
+    <label for='normal'>normal input</label>
+    <input id='normal'/>
+
+    <label for='string'>treasure-focus-class input with string</label>
+    <input id='string' treasure-focus-class='string'/>
+
+    <label for='binding'>treasure-focus-class input with binding</label>
+    <input id='binding' treasure-focus-class='{{binding}}'/>
+  </div>
+
+  <script src='lib/angular/angular.js'></script>
+  <script src='lib/angular-animate/angular-animate.js'></script>
+  <script src='src/treasure-focus-class.js'></script>
+  <script>
+  (function () {
+    angular.module('example', ['ngAnimate', 'treasure-focus-class']);
+    angular.module('example').run(run);
+
+    run.$inject = ['$rootScope'];
+    function run ($rootScope) {
+      $rootScope.binding = 'binding';
+    }
+  })();
+  </script>
+</body>
+</html>

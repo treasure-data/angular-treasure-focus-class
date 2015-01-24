@@ -1,0 +1,26 @@
+{
+  "name": "angular-treasure-focus-class",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Cesar Andreu",
+      "email": "cesar@treasure-data.com"
+    }
+  ],
+  "main": ["src/treasure-focus-class.js"],
+  "ignore": [
+    "lib",
+    "test",
+    "*.conf.js",
+    "**/.*",
+    "*.html",
+    "*.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular-animate": ">=1.2.0",
+    "angular": ">=1.2.0"
+  }
+}
