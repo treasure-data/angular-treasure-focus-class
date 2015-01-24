@@ -15,14 +15,22 @@ treasure-focus-class requires [ngAnimate](https://docs.angularjs.org/api/ngAnima
 ## Usage
 
 ```javascript
-$scope.foo = {bar: 'foobar'};
+angular.module('example', ['treasure-focus-class', 'ngAnimate']);
+angular.module('example').run(run);
+
+run.$inject = ['$rootScope'];
+function run ($rootScope) {
+  $rootScope.foobar = 'foobar';
+}
 ```
 
 ```html
 <!-- focusin will add foobar class, focusout will remove foobar class -->
 <!-- both strings and expressions are allowed -->
-<input treasure-focus-class='{{foo.bar}}'/>
-<input treasure-focus-class='foobar'/>
+<div ng-app='example'>
+  <input treasure-focus-class='{{foobar}}'/>
+  <input treasure-focus-class='foobar'/>
+</div>
 ```
 
 ## Example:
