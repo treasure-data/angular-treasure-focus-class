@@ -41,7 +41,7 @@ Try the example by running:
 * `bower install`
 * `npm run example`
 
-Or visit the [live example](http://plnkr.co/edit/FGh4pa5IrcYKzAiNlO64?p=preview).
+Or visit the [live example](https://treasure-data.github.io/angular-treasure-focus-class/).
 
 
 ## Animations
