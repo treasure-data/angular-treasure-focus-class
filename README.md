@@ -33,13 +33,15 @@ function run ($rootScope) {
 </div>
 ```
 
-## Example:
+## Example
 
-Try the live example by running:
+Try the example by running:
 
 * `npm install`
 * `bower install`
 * `npm run example`
+
+Or visit the [live example](http://plnkr.co/edit/FGh4pa5IrcYKzAiNlO64?p=preview).
 
 
 ## Animations
